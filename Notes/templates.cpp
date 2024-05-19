@@ -41,7 +41,15 @@ class paired{
             return -1;
       }
 };
+template <class T>
+T add(T a, T b){
+      return a+b;
+}
 int main(){
+      float a = 2.4;
+      float b = 3.4;
+      float sum = add<float>(a,b);
+      cout<<sum<<endl;
       vector <int> v(3);
       v.arr[0] = 1;
       v.arr[1] = 3;
@@ -64,3 +72,4 @@ int main(){
 
       return 0;
 }
+
